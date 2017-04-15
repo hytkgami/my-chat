@@ -2,5 +2,7 @@
   <p>{{body}}</p>
 </div>
 
-<input type="text" placeholder="ここにメッセージを入力" [(ngModel)]="text">
-<button (click)="send()">送信</button>
+<div id="input-field">
+  <input type="text" id="chat-form" placeholder="ここにメッセージを入力" [(ngModel)]="text">
+  <button (click)="send()">送信</button>
+</div>
