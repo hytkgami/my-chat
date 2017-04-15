@@ -12,4 +12,9 @@ export class InputFormComponent implements OnInit {
   ngOnInit() {
   }
 
+  bodies = ["test1","test2"];
+  text;
+  send() {
+    this.bodies.push(this.text)
+  }
 }

@@ -1,4 +1,6 @@
-<form action="index.html">
-  <input type="text" placeholder="ここにメッセージを入力">
-  <button type="submit">送信</button>
-</form>
+<div *ngFor="let body of bodies;let i = index;">
+  <p>{{body}}</p>
+</div>
+
+<input type="text" placeholder="ここにメッセージを入力" [(ngModel)]="text">
+<button (click)="send()">送信</button>
